@@ -2,6 +2,12 @@ CREATE DATABASE IF NOt EXISTS codeup_test_db;
 
 USE codeup_test_db;
 
+#Open up albums_seeder.sql, after your USE statement, add a TRUNCATE query to delete all records from the table before inserting.
+TRUNCATE TABLE albums;
+SELECT * FROM albums;
+
+
+
 INSERT INTO albums (artist, record, released,  genre, total_certified_copies, claimed_sales, refs)
 VALUES ('Michael Jackson', 'Thriller', '1982', 'Pop', 47.3, 66, 4 ),
        ('Led Zeppelin','Led Zeppelin IV','1971','rock', 29.0,35, 0),
@@ -26,3 +32,4 @@ VALUES ('Michael Jackson', 'Thriller', '1982', 'Pop', 47.3, 66, 4 ),
        ('Santana','Supernatural','1999','Latin',20.5,30,99),
        ('Madonna','The Immaculate Collection','1990','Pop',19.4,30,102),
        ('Guns N Roses', 'Appetite for Destruction','1987','Hard rock',21.9,30,103);
+
